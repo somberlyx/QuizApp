@@ -8,3 +8,20 @@
 body {
   background: #495897;
 }
+
+.container {
+  background-color: #ecc8af;
+  width: 90%;
+  max-width: 800px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+h1, h2 {
+  color: #2e312a;
+}
+
+button {
+  display: block;
+}
