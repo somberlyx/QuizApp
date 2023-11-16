@@ -66,16 +66,17 @@ button {
   cursor: pointer;
   border: 1px solid #2e312a;
   border-radius: 4px;
-  transition: opacity 0.15s ease, font-size 0.15s ease;
+  transition: opacity 0.15s ease, font-size 0.15s ease, background-color 0.3s, color 0.3s;
 }
 
 .options:hover {
   color:#fff;
   background-color: #495897;
+  opacity: 0.9;
 }
 
 .options:active {
   font-size: 15px;
   font-weight: 600;
-  opacity: 0.9;
+  opacity: 0.8;
 }
