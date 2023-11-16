@@ -55,4 +55,27 @@ button {
 
 .options {
   background: #ecc8af;
+  color: #2e312a;
+  width: 90%;
+  height: 70px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: 1px solid #2e312a;
+  border-radius: 4px;
+  transition: opacity 0.15s ease, font-size 0.15s ease;
+}
+
+.options:hover {
+  color:#fff;
+  background-color: #495897;
+}
+
+.options:active {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
 }
