@@ -80,3 +80,27 @@ button {
   font-weight: 600;
   opacity: 0.8;
 }
+
+#next-question {
+  background: #495897;
+  color: #fff;
+  border: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  height: 50px;
+  width: 180px;
+  font-size: 18px;
+  padding: 10px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  border-radius: 4px;
+}
+
+#next-question:hover {
+  opacity: 0.9;
+}
+
+#next-question:active {
+  opacity: 0.8;
+}
