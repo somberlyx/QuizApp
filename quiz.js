@@ -69,7 +69,11 @@ function showQandA(){
     const option = document.createElement("button");
     option.innerText = answers.choice;
     option.classList.add("options");
-    optionbtn.appendChild(option);    
+    optionbtn.appendChild(option);  
+    if(option.correct){
+      option.dataset.correct = options.correct;
+    }  
+    option.addEventListener('click', selectAnswer)
   });
 }
 
@@ -77,6 +81,16 @@ function reset(){
   nextBtn.style.display = "none";
   while(optionbtn.firstChild){
     optionbtn.removeChild(optionbtn.firstChild);
+  }
+}
+
+function selectAnswer(e){
+  const selectedBtn = e.target;
+  const isCorrect = selectedBtn.dataset.correct === "true";
+  if(isCorrect){
+    selectedBtn.classList.add("correct");
+  } else {
+    selectedBtn.classList.add('incorrect');
   }
 }
 
