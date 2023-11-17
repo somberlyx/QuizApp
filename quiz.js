@@ -43,4 +43,11 @@ const questions = [
       { choice: "Greenland", correct: true }
     ]
   }
-]
+];
+
+const questionElement = document.getElementById("question");
+const optionbtn  = document.getElementById("answer-options");
+const nextBtn  = document.getElementById("next-question");
+
+let currentQuestionIndex = 0;
+let score = 0;
