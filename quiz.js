@@ -51,3 +51,10 @@ const nextBtn  = document.getElementById("next-question");
 
 let currentQuestionIndex = 0;
 let score = 0;
+
+function beginQuiz(){
+  currentQuestionIndex = 0;
+  score = 0
+  nextBtn.innerHTML = "Next";
+  showQuestion();
+}
