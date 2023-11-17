@@ -105,3 +105,11 @@ button {
 #next-question:active {
   opacity: 0.8;
 }
+
+.correct{
+  background-color: #9aeabc;
+}
+
+.incorrect {
+  background: #ff9393;
+}

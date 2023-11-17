@@ -65,13 +65,13 @@ function showQandA(){
   let questionNumber = currentQuestionIndex + 1;
   questionElement.innerText = questionNumber + ". " + currentQuestion.question
 
-  currentQuestion.options.forEach( answers => {
+  currentQuestion.options.forEach(answers => {
     const option = document.createElement("button");
     option.innerText = answers.choice;
     option.classList.add("options");
     optionbtn.appendChild(option);  
-    if(option.correct){
-      option.dataset.correct = options.correct;
+    if(answers.correct){
+      option.dataset.correct = answers.correct;
     }  
     option.addEventListener('click', selectAnswer)
   });
