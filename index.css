@@ -69,7 +69,7 @@ button {
   transition: opacity 0.15s ease, font-size 0.15s ease, background-color 0.3s, color 0.3s;
 }
 
-.options:hover {
+.options:hover:not([disabled]) {
   color:#fff;
   background-color: #495897;
   opacity: 0.9;
