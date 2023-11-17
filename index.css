@@ -81,6 +81,10 @@ button {
   opacity: 0.8;
 }
 
+.options:disabled{
+  cursor: no-drop;
+}
+
 #next-question {
   background: #495897;
   color: #fff;
