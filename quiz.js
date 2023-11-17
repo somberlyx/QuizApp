@@ -61,6 +61,7 @@ function beginQuiz(){
 }
 
 function showQandA(){
+  reset();
   let currentQuestion = questions[currentQuestionIndex]
   let questionNumber = currentQuestionIndex + 1;
   questionElement.innerText = questionNumber + ". " + currentQuestion.question
@@ -104,10 +105,26 @@ function selectAnswer(e){
 
 nextBtn.addEventListener("click", ()=>{
   if(currentQuestionIndex < questions.length){
-    handleNextButton();
+    handleNextQuestion();
   } else {
     beginQuiz();
   }
 })
+
+function handleNextQuestion(){
+  currentQuestionIndex++;
+  if(currentQuestionIndex < questions.length){
+    showQandA();
+  }else{
+    showScore();
+  }
+}
+
+function showScore(){
+  reset();
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+  nextBtn.innerHTML = "Play Again";
+  nextBtn.style.display = "block";
+}
 
 beginQuiz();
