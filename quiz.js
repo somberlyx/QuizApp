@@ -45,7 +45,7 @@ const questions = [
   }
 ];
 
-const questionElement = document.getElementById("question");
+const questionElement = document.getElementById("questions");
 const optionbtn  = document.getElementById("answer-options");
 const nextBtn  = document.getElementById("next-question");
 
@@ -53,10 +53,11 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function beginQuiz(){
+  reset();
   currentQuestionIndex = 0;
   score = 0
   nextBtn.innerHTML = "Next";
-  showQuestion();
+  showQandA();
 }
 
 function showQandA(){
@@ -71,3 +72,12 @@ function showQandA(){
     optionbtn.appendChild(option);    
   });
 }
+
+function reset(){
+  nextBtn.style.display = "none";
+  while(optionbtn.firstChild){
+    optionbtn.removeChild(optionbtn.firstChild);
+  }
+}
+
+beginQuiz();
