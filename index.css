@@ -75,7 +75,7 @@ button {
   opacity: 0.9;
 }
 
-.options:active {
+.options:active.options:hover:not([disabled]) {
   font-size: 15px;
   font-weight: 600;
   opacity: 0.8;
