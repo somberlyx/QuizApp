@@ -102,4 +102,12 @@ function selectAnswer(e){
   nextBtn.style.display = "block";
 }
 
+nextBtn.addEventListener("click", ()=>{
+  if(currentQuestionIndex < questions.length){
+    handleNextButton();
+  } else {
+    beginQuiz();
+  }
+})
+
 beginQuiz();
